@@ -1,0 +1,35 @@
+{
+    "name": "amenophis/proxy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérémy Leherpeur",
+            "email": "amenophis@leherpeur.net"
+        }
+    ],
+    "require": {
+        "php": "~7.3",
+        "symfony/console": "~3.2 || ~4.0",
+        "jean85/pretty-package-versions": "^1.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "symfony/debug": "^4.2",
+        "symfony/var-dumper": "^4.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Amenophis\\Proxy\\": [
+                "src/"
+            ]
+        }
+    },
+    "bin": [
+        "bin/proxy"
+    ]
+}
