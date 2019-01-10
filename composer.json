@@ -13,6 +13,7 @@
         "jean85/pretty-package-versions": "^1.2"
     },
     "require-dev": {
+        "phpunit/phpunit": "^7.5",
         "roave/security-advisories": "dev-master",
         "symfony/debug": "^4.2",
         "symfony/var-dumper": "^4.2"
@@ -23,11 +24,10 @@
         }
     },
     "autoload": {
-        "psr-4": {
-            "Amenophis\\Proxy\\": [
-                "src/"
-            ]
-        }
+        "psr-4": { "Amenophis\\Proxy\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\Amenophis\\Proxy\\": "tests/" }
     },
     "bin": [
         "bin/proxy"
