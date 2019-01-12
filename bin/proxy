@@ -25,4 +25,7 @@ $application = new \Symfony\Component\Console\Application(
     'Proxy',
     $version
 );
+$application->add(new \Amenophis\Proxy\Command\CertificateCaInstallCommand());
+$application->add(new \Amenophis\Proxy\Command\CertificateCaUninstallCommand());
+$application->add(new \Amenophis\Proxy\Command\CertificateGenerateCommand());
 $application->run();
