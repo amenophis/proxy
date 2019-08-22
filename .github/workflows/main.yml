@@ -17,7 +17,6 @@ jobs:
           packages=$(apt-cache search php7.4- | grep ^php | grep -v ^php7.4-fpm | awk '{print $1}' | awk '{print $1}' | tr '\n' ' ');
           sudo apt-get install -y php7.4 $packages; \
         fi
-        ls -la /usr/bin/php*
         sudo update-alternatives --set php /usr/bin/php${{ matrix.php }} && php -v
       env:
         DEBIAN_FRONTEND: noninteractive
